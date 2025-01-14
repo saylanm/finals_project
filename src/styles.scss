@@ -1,3 +1,8 @@
+@use './layout/display_320.scss';
+@use './layout/display_768.scss';
+@use './layout/display_1440.scss';
+
+
 @font-face {
     font-family: 'TT Lakes';
     src: url('./font/TTLakes-ExtraLight.ttf') format('truetype');

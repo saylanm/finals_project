@@ -1,4 +1,5 @@
 import './styles.scss';
+
 import 'normalize.css'; // Импортируем normalize.css
 import exampleImage from './image/image.jpg';
 
