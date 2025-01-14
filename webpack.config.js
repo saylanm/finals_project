@@ -34,6 +34,16 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'image/[name][ext]',
+                }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'font/[name][ext]', // Сохраняет шрифты в папку dist/fonts
+                },
             },
         ],
     },
