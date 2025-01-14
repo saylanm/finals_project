@@ -1,7 +1,7 @@
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer'); // Импортируем Autoprefixer
 
 module.exports = {
     entry: './src/index.js',
@@ -14,31 +14,44 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                test: /\.scss$/, // Обрабатываем SCSS файлы
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ],
+            },
+            {
+                test: /\.css$/, // Обрабатываем CSS файлы, включая normalize.css
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader', // Это загрузчик для Autoprefixer
+                ],
+                include: /node_modules/, // Включаем node_modules для normalize.css
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
-                type: 'asset/resource'
+                type: 'asset/resource',
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: 'index.html'
+            filename: 'index.html',
         }),
         new MiniCssExtractPlugin({
-            filename: 'styles.css'
+            filename: 'styles.css',
         }),
     ],
     devServer: {
         static: {
-          directory: path.join(__dirname, 'dist'),
+            directory: path.join(__dirname, 'dist'),
         },
         port: 8080, // Порт сервера
         open: true, // Открытие браузера автоматически
         hot: true, // Включение горячей перезагрузки
-      },
-      mode: 'development',
+    },
 };
