@@ -1,0 +1,142 @@
+// .modal {
+//     display: none;
+// }
+
+
+.header {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-right: 25px;
+        border-top: 2px solid #D9FFF5;
+        background: linear-gradient(#F8F8F8 100%, #7E7E82 0.01%);
+        color: #7E7E82;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+.swiper {
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.svg {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+    background-image: url('./icons/go.svg');
+    margin-left: 150px;
+    width: 40px;
+    height: 40px;
+}
+
+.kart {
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 220px;
+    height: 72px;
+    border-radius: 5px;
+}
+
+
+.container--lenovo {
+    background-image: url("./icons/lenovo.png");
+    border: 1px solid #EAEAEA;
+    background-color: #F8F8F8;
+    
+
+}
+
+.container--samsung {
+    background-image: url("./icons/samsung.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+
+}
+
+.container--apple {
+    background-image: url("./icons/apple.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+
+}
+
+.container--viewSonik {
+    background-image: url("./icons/viewSonic.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+
+}
+
+.container--bosch {
+    background-image: url("./icons/bosch.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+}
+
+.container--hp {
+    background-image: url("./icons/hp.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+}
+
+.container--acer {
+    background-image: url("./icons/acer.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+}
+
+.container--sony {
+    background-image: url("./icons/sony.png");
+    border: none;
+    background-color: #F8F8F8;
+    border: 1px solid #EAEAEA;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-wrapper {
+    height: 100px;
+}
+
+.logo {
+    color: #7E7E82;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+}
+.buttons {
+    display: none;
+}
+}

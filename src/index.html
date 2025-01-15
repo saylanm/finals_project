@@ -4,14 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles.scss">
 </head>
 <body>
-    <div class="container">
-        <p>привет</p>
+    <header class="header-block">
+        <nav class="header-navigation">
+            <div class="block_320">
+                <button class="header-navigation__button--burger block_320__img-burger"></button>
+                <button class="header-navigation__button block_320__img-group"><img src="./image/Group.svg" alt=""></button>
+                <button class="header-navigation__button block_320__img-divider"><img src="./image/divider.svg" alt=""></button>
+            </div>
+            <div class="block_768">
+            <div class="block_image_320px">
+                <button class="header-navigation__button--repair"></button>
+                <button class="header-navigation__button--checkstatus"></button>
+            </div>
+            <div class="block_image_768px">
+                <button class="header-navigation__button--call"></button>
+                <button class="header-navigation__button--chat"></button>
+                <button class="header-navigation__button--profile"></button>
+                <button class="header-navigation__button"><img class="block_image_320px__img-divider-2" src="./image/divider.svg" alt=""></button>
+            </div>
+        </div>  
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main-logo">
+            <div class="logo">
+                <div class="logotip"><h1 class="main-logo__name">Услуги и сервисы</h1></div>
+            </div>
+            <div class="block_image_1120px">           
+                    <div class="icon"><button class="block_image_1120px__button-1120px--repair"></button>Оставить заявку</div>
+                    <div class="icon"><button class="block_image_1120px__button-1120px--checkstatus"></button>Статус ремонта</div>
+            </div>
+        </div>
+        <nav class="main-navigation">
+            <a class="main-navigation__button--active" href="#">Ремонтируемые бренды</a>
+            <a class="main-navigation__button button-v2" href="#">Дополнительные услуги</a>
+            <a class="main-navigation__button button-v2" href="#">Цены на услуги</a>
+            <a class="main-navigation__button button-v2" href="#">Адреса сервисных центров</a>
+            <a class="main-navigation__button button-v2" href="#">Специальные цены</a>
+            <a class="main-navigation__button--1120" href="#">Отзывы</a>
+        </nav>
+        <article class="block-text">
+            <div class="flex-column">
+            <div class="block-text_768">
+            <p class="block-text_768__block-text--one">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                Только у нас вы можете отремонтировать свой ноутбук Dell
+                с официальной гарантией производителя
+            </p>
+            </div>
+            <p class="flex-column__block-text--three">
+                <p class="block-text__two">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="span-text">,что подтверждает большое количество постоянных клиентов.
+                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</span>
+                </p>
+            </p>
+                <div class="container-read">
+                <img class="container-read__iamge" src="./image/expand.svg" alt="">
+                <a><b class="container-read__text-fonts">Читать далее</b></a>
+                </div>
+            </div>
+            <div class="CPS">
+                <img class="block-text__image_block"  src="./image/image.jpg" alt="">
+            </div>
+        </article>
+    </main>
+    <!-- слайдер -->
+    <div class="header">
+        <h4 class="logo">Ремонт техники различных брендов</h4>
     </div>
-    <div class="new">
-        <p class="new_p">Соединили</p>
+    <div class="swiper swiper-1"> 
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <button class="kart container--lenovo"><div class="svg"></div></button>
+            </li>
+            <li class="swiper-slide">
+                <button class="kart container--samsung"><div class="svg"></div></button>
+            </li>
+            <li class="swiper-slide">
+                <button class="kart container--apple"><div class="svg"></div></button>
+            </li>
+            <li class="swiper-slide">
+                <button class="kart container--viewSonik"><div class="svg"></div></button>
+            </li>
+            <li class="swiper-slide">
+                <button class="kart container--bosch"><div class="svg"></div></button>
+            </li>
+            <li class="swiper-slide">
+                <button class="kart container--hp"><div class="svg"></div></button>
+            </li>
+            <li class="swiper-slide">
+                <button class="kart container--acer"><div class="svg"></div></button>
+            </li>
+            <div class="swiper-slide">
+                <button class="kart container--sony"><div class="svg"></div></button>
+            </div>
+
+            <div class="modal ">
+            <div class="swiper-slide">
+                <button class="kart container--lenovo"><div class="svg"></div></button>
+            </div>
+            <div class="swiper-slide ">
+                <button class="kart container--samsung"><div class="svg"></div></button>
+            </div>
+            <div class="swiper-slide ">
+                <button class="kart container--apple"><div class="svg"></div></button>
+            </div>
+            </div>
+        </ul>
+        <div class="swiper-pagination"></div>
     </div>
+    <div class="buttons">
+        <img class="img" src="./image/expand.svg" alt="">
+        <a class="open" href=""><b>Показать все</b></a>
+    </div>
+    <div class="buttons">
+        <img class="img close modal" src="./image/expand.svg" alt="">
+        <button class="closesd modal" href=""><b>Скрыть</b></button>
+    </div>
+    <div class="body">
+        <div class="header">
+            <h4 class="logo">Цена за услуги</h4>
+        </div>
+        <div class="swiper swiper-2">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <button class="kart"><div class="text">Ремонт ноутбуков</div><div class="svg"></div></button>
+                </li>
+                <li class="swiper-slide">
+                    <button class="kart"><div class="text">Ремонт планшетов</div><div class="svg"></div></button>
+                </li>
+                <li class="swiper-slide">
+                    <button class="kart"><div class="text">Ремонт ПК</div><div class="svg"></div></button>
+                </li>
+                <li class="swiper-slide">
+                    <button class="kart"><div class="text">Ремонт мониторов</div><div class="svg"></div></button>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

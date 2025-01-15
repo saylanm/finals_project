@@ -1,29 +1,122 @@
 @use './layout/display_320.scss';
 @use './layout/display_768.scss';
 @use './layout/display_1440.scss';
+@use './layout/swiper_1.scss';
+// @use './layout/swiper_2.scss';
 
 
 @font-face {
-    font-family: 'TT Lakes';
+    font-family: 'TT Lakes-Blake';
     src: url('./font/TTLakes-ExtraLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    
   }
 
-.container {
+  .block_image_320px__img {
+    min-width: 40px;
+    min-height: 40px;
+
+}
+
+.header-navigation__button--repair {
+    width: 40px;
+    height: 40px;
+    background-image: url("./image/repair.svg");
+    border: none;
+    background-color: #F8F8F8;
+
+}
+
+.header-navigation__button--checkstatus {
+    width: 40px;
+    height: 40px;
+    background-image: url("./image/checkstatus.svg");
+    border: none;
+    background-color: #F8F8F8;
+}
+
+.header-navigation__button--burger {
+    width: 40px;
+    height: 40px;
+    background-image: url("./image/burger.svg");
+    border: none;
+    background-color: #F8F8F8;
+}
+
+.header-navigation__button--call {
+    width: 40px;
+    height: 40px;
+    background-image: url("./image/call.svg");
+    border: none;
+    background-color: #F8F8F8;
+    }
+
+.header-navigation__button--chat {
+    width: 40px;
+    height: 40px;
+    background-image: url("./image/chat.svg");
+    border: none;
+    background-color: #F8F8F8;
+    }
+
+.header-navigation__button--profile {
+    width: 40px;
+    height: 40px;
+    background-image: url("./image/profile.svg");
+    border: none;
+    background-color: #F8F8F8;
+    }
+
+.block_320__img-group {
+    width: 96.55px;
+    height: 50.81px;
+}
+
+.block_320__img-divider {
+    width: 2px;
+    height: 32px;
+
+}
+
+.main {
     width: 100%;
-    height: 100px;
-    background-color: rgb(2, 247, 255);
+    background-color: #F8F8F8;
+
 }
 
-p {
-    font-family: 'TT Lakes';
-    font-size: 50px;
+.header-navigation__button {
+    border: none;
+    background: #ffffff;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
+    width: 288px;
+    height: 90px;
 }
 
+.logotip {
+    display: flex;
+    background-image: url("./image/highlight.svg");
+    width: 4px;
+    height: 40px;
+}
+
+.main-logo__name {
+    font-size: 28px;
+    display: flex;
+    width: 266px;
+    height: auto;
+    justify-content: start;
+    white-space: nowrap;
+    margin-left: 20px;
+    color: black;
+}
 
