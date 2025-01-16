@@ -187,6 +187,39 @@
         background: $background;
     }
 
+    .footer_text {
+        width: 258px;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .footer_text--text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer_text--container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;  
+    }
+
+    .footer_text--container--svg {
+        margin-left: 105px;
+        margin-top: -25px;
+        width: 24px;
+        height: 27px;
+        background-image: url('./icons/more.svg');
+        background-repeat: no-repeat;
+        border: none;
+    }
+
     .footer { 
         border-top: 2px solid #D9FFF5;
         padding-top: 20px;

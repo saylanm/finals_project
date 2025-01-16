@@ -14,7 +14,7 @@ import exampleImage from './image/image.jpg';
 import exampleEmagev2 from './image/expand.svg';
 import exampleEmagev3 from './image/Group.svg';
 import exampleEmagev4 from './image/divider.svg';
-import exampleEmagev5 from './icons/more.svg';
+
 
 
 
