@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const initSwiper = () => {
         if (window.innerWidth <= 768 && !swiperInstance) { // Проверяем, мобильная ли версия
             swiperInstance = new Swiper('.swiper', {
-                slidesPerView: 1.23,
+                slidesPerView: 1.2,
                 spaceBetween: 10,
                 loop: true,
                 pagination: {

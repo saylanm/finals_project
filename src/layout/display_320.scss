@@ -187,6 +187,26 @@
         background: $background;
     }
 
+    .footer { 
+        border-top: 2px solid #D9FFF5;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px; /* Расстояние между элементами */
+    }
+    
+    .footer--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-element {
+        text-align: center; /* На случай, если текст перенесется на несколько строк */
+    }
     
 }
 

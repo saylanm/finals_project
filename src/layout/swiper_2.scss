@@ -25,9 +25,11 @@
     min-width: 320px;
     height: 50px;
     padding-top: 30px;
+    margin-bottom: 30px;
     padding-left: 20px;
     padding-right: 25px;
-    margin-bottom: 25px;
+
+    padding-bottom: 25px;
     border-top: 2px solid #D9FFF5;
     background: linear-gradient(#F8F8F8 100%, #7E7E82 0.01%);
     color: #7E7E82;
@@ -51,15 +53,18 @@
     display: flex;
     flex-direction: column;
     width: 240px;
-    height: 160px;
+    height: 150px;
     border-radius: 5px;
     color: black;
     border: 1px solid #EAEAEA;
     background-color: #F8F8F8;
     border-radius: 15px;
+    margin-top: 15px;
 
 
 }
+
+
 
 .text {
     display: flex;
@@ -77,3 +82,4 @@
         color: #7E7E82;
     }
 }
+
