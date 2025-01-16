@@ -1,28 +1,40 @@
 .swiper-pagination {
     margin-top: 10px;
+    padding-top: 20px;;
 }
 .swiper3 {
     width: 100%;
-    height: 170px;
+    min-height: 190px;
     max-width: 320px;
     padding: 25px 5px 35px 5px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 .body2 {
     margin-bottom: 140px;
 }
+
+.logo3 {
+    display: flex;
+    width: 288px;
+    height: 50px;
+    color: #7E7E82;
+}
+
 .pay {
+    
     margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-
 .kart3 {
     display: flex;
     flex-direction: column;
     width: 260px;
-    height: 200px;
-    border-radius: 5px;
+    height: 210px;
+    margin-top: 60px;
+    border-radius: 10px;
     color: black;
     border: 1px solid #EAEAEA;
     background-color: #F8F8F8;
