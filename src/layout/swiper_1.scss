@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-// .modal {
-//     display: none;
-// }
+.modal {
+    display: none;
+}
 @font-face {
     font-family: 'TT Lakes';
     src: url('./font/TTLakes-ExtraLight.ttf') format('truetype');
@@ -209,11 +209,13 @@
     .modal-show {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: start;
-        gap: 30px;
-        margin-top: 0;
-        padding-left: 0px;
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+        justify-content: space-between; /* Разъезжаются равномерно по всей ширине */
+        gap: 30px; /* Расстояние между элементами */
+        width: 100%; /* Контейнер занимает всю ширину родителя */
+        margin: 0 auto; /* Центрируем контейнер */
+        padding: 0; /* Убираем лишние отступы */
+        box-sizing: border-box; /* Учитываем отступы внутри ширины */
     }
 
     .closesd {
