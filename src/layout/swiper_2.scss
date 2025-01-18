@@ -3,20 +3,23 @@
     margin: 0;
     padding: 0;
 }
+
+.action-buttons {
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
 .modal2 {
     display: none; /* Скрываем элементы с этим классом */
 }
 
 .modal3 {
-    display: flex; /* Отображаем элементы с этим классом */
+    display: flex; 
+    /* Отображаем элементы с этим классом */
 }
 
-.action-buttons,
-.action-buttons2 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .action-icon {
     width: 20px;
@@ -27,6 +30,10 @@
     transform: rotate(180deg); /* Поворот иконки */
 }
 
+.hide-all-2 {
+    border: none;
+    background-color: white;
+}
 
 
 @font-face {
