@@ -44,6 +44,10 @@
     font-display: swap;
   }
   @media (min-width: 320px) and (max-width: 767px) {
+    .non_320px {
+        display: none;
+    }
+
   .swiper2 {
     width: 100%;
     min-height: 190px;
