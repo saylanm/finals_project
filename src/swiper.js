@@ -29,20 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', initSwiper);
 });
 
-var button = document.querySelector('.open');
-var button_closed = document.querySelector('.closesd');
-var close = document.querySelector('.close');
-var content = document.querySelector('.modal');
-var img = document.querySelector('.close');
-var image = document.querySelector('.img');
+var button = document.querySelector('.open'); // Ссылка-кнопка "Показать все"
+var button_closed = document.querySelector('.closesd'); // Кнопка "Скрыть"
+var close = document.querySelector('.close'); // Изображение-кнопка "Закрыть"
+var content = document.querySelector('.modal'); // Модальное окно
+var image = document.querySelector('.img'); // Изображение внутри `.img`
+
 
 button.addEventListener('click', function(evt) {
     evt.preventDefault();
     content.classList.add('modal-show');
     button.classList.add('modal');
-    img.classList.add('modal');
+    close.classList.add('modal');
     button_closed.classList.remove('modal');
-    img.classList.remove('modal');
+    close.classList.remove('modal');
     image.classList.add('modal');
 
 })
@@ -50,8 +50,43 @@ button.addEventListener('click', function(evt) {
 button_closed.addEventListener('click', function() {
     content.classList.remove('modal-show');
     button.classList.remove('modal');
-    img.classList.remove('modal');
+    close.classList.remove('modal');
     button_closed.classList.add('modal');
     image.classList.remove('modal');
     close.classList.add('modal');
 })
+// Находим элементы
+var opens_button = document.querySelector('.show-all-2'); 
+var hide_button = document.querySelector('.hide-all-2'); 
+var vidimo = document.querySelector('.modal2');
+
+var action_buttons = document.querySelector('.action-buttons'); 
+var action_buttons2 = document.querySelector('.action-buttons2');
+
+// Проверяем состояние при загрузке страницы
+window.addEventListener('DOMContentLoaded', function () {
+    action_buttons2.classList.add('modal2'); // Скрываем "Скрыть" при загрузке
+    action_buttons.classList.remove('modal2'); // Показываем "Показать все"
+});
+
+// Логика "Показать все"
+opens_button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    console.log('Показать все: work');
+
+    // Показать скрытые элементы
+    vidimo.classList.add('modal3'); // Показываем содержимое
+    action_buttons2.classList.remove('modal2'); // Показываем "Скрыть"
+    action_buttons.classList.add('modal2'); // Скрываем "Показать все"
+});
+
+// Логика "Скрыть"
+hide_button.addEventListener('click', function () {
+    console.log('Скрыть: work');
+
+    // Скрыть элементы
+    vidimo.classList.remove('modal3'); // Скрываем содержимое
+    action_buttons2.classList.add('modal2'); // Скрываем "Скрыть"
+    action_buttons.classList.remove('modal2'); // Показываем "Показать все"
+});
+

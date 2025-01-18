@@ -3,6 +3,31 @@
     margin: 0;
     padding: 0;
 }
+.modal2 {
+    display: none; /* Скрываем элементы с этим классом */
+}
+
+.modal3 {
+    display: flex; /* Отображаем элементы с этим классом */
+}
+
+.action-buttons,
+.action-buttons2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.close {
+    transform: rotate(180deg); /* Поворот иконки */
+}
+
+
 
 @font-face {
     font-family: 'TT Lakes';
@@ -11,7 +36,7 @@
     font-style: normal;
     font-display: swap;
   }
-
+  @media (min-width: 320px) and (max-width: 767px) {
   .swiper2 {
     width: 100%;
     min-height: 190px;
@@ -60,8 +85,6 @@
     background-color: #F8F8F8;
     border-radius: 15px;
     margin-top: 15px;
-
-
 }
 
 
@@ -74,12 +97,145 @@
     margin-left: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+
     .logo2 {
         display: flex;
         width: 288px;
         height: auto;
         color: #7E7E82;
     }
+
+    .buttons-2swiper {
+        display: none;
+    }
 }
 
+
+@media (min-width: 768px) and (max-width: 1120px) {
+
+    .header2 {
+        display: flex;
+        min-width: 320px;
+        height: 50px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 25px;
+    
+        padding-bottom: 25px;
+        border-top: 2px solid #D9FFF5;
+        background: linear-gradient(#F8F8F8 100%, #7E7E82 0.01%);
+        color: #7E7E82;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .swiper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+        .swiper-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 20px;
+        padding-left: 10px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex: 1 1 calc(33.33% - 20px);
+    }
+    /* flex: 1 1 calc(33.33% - 30px); 3 карточки в ряд */
+
+    .swiper {
+        width: 100%; /* Занимает всю ширину экрана */
+        box-sizing: border-box; /* Учитывает паддинги */
+    }
+
+    .swiper-wrapper {
+        width: 100%; /* Растягивается на ширину родителя */
+    }
+    .swiper-pagination {
+        display: none;
+    }
+
+    a {
+        line-height: 24px;
+        color: #1B1C21;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .close {
+        transform: rotate(180deg);
+    }
+
+    .modal-show2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+        justify-content: space-between; /* Разъезжаются равномерно по всей ширине */
+        gap: 30px; /* Расстояние между элементами */
+        width: 100%; /* Контейнер занимает всю ширину родителя */
+        margin: 0 auto; /* Центрируем контейнер */
+        padding: 0; /* Убираем лишние отступы */
+        box-sizing: border-box; /* Учитываем отступы внутри ширины */
+    }
+
+    .closesd {
+        border: none;
+    }
+
+    .svg2 {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        background-image: url('./icons/go.svg');
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+        margin-left: 180px;
+    }
+    
+    .kart2 {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        height: 150px;
+        border-radius: 5px;
+        color: black;
+        border: 1px solid #EAEAEA;
+        background-color: #F8F8F8;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+    
+    
+    
+    .text {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    
+    .logo2 {
+        display: flex;
+        width: 288px;
+        height: auto;
+        color: #7E7E82;
+    }
+    // реализация кнопок
+
+    
+    
+}
