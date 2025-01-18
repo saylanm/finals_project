@@ -152,3 +152,71 @@
     display: none;
 }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+
+    .swiper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+    .swiper-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex: 1 1 calc(33.33% - 30px);
+    }
+/* flex: 1 1 calc(33.33% - 30px); 3 карточки в ряд */
+    .swiper-pagination {
+        display: none;
+    }
+
+    .container--acer {
+        display: none;
+    }
+    .container--sony {
+        display: none;
+    }
+
+    .buttons {
+        margin-left: 15px;
+        display: flex;
+        gap: 5px;
+    }
+
+    a {
+        line-height: 24px;
+        color: #1B1C21;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .close {
+        transform: rotate(180deg);
+    }
+
+    .modal-show {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 30px;
+        margin-top: 0;
+        padding-left: 0px;
+    }
+
+    .closesd {
+        border: none;
+    }
+}
