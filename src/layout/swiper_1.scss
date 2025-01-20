@@ -247,5 +247,11 @@
         justify-content: center;
         flex: 1 1 calc(25% - 30px);
         }
+    
+    .buttons {
+        margin-left: 15px;
+        display: flex;
+        gap: 5px;
+    }
    
 }
