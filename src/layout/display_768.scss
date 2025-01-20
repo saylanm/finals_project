@@ -396,4 +396,18 @@
     .footer-element {
         text-align: end; /* На случай, если текст перенесется на несколько строк */
     }
+
+    .footer_text {
+        max-width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        gap: 20px;
+    }
 }
+
+
