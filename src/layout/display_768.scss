@@ -368,7 +368,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px)  { //убрали ограничитель на max-width 1440px
 
     .footer_text--container {
         display: flex;
@@ -407,6 +407,16 @@
         margin-bottom: 20px;
         margin-left: 30px;
         gap: 20px;
+    }
+
+    .footer_text--container--svg {
+        margin-left: 305px;
+        margin-top: -25px;
+        width: 24px;
+        height: 27px;
+        background-image: url('./icons/more.svg');
+        background-repeat: no-repeat;
+        border: none;
     }
 }
 
