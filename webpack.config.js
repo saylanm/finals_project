@@ -6,8 +6,8 @@ const autoprefixer = require('autoprefixer'); // Импортируем Autopref
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',  // Имя выходного файла
+        path: path.resolve(__dirname, 'dist'),  // Путь до папки dist
         clean: true,
     },
     mode: 'development',
@@ -20,7 +20,7 @@ module.exports = {
                     'css-loader',
                     'postcss-loader',
                     'sass-loader',
-                ],
+                ]
             },
             {
                 test: /\.css$/, // Обрабатываем CSS файлы, включая normalize.css
@@ -35,7 +35,7 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'image/[name][ext]',
+                    filename: 'image/[name][ext]'
                 }
             },
             {
