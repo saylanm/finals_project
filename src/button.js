@@ -53,17 +53,22 @@ hide_button.addEventListener('click', function () {
 });
 
 // реализация кнопки бургера
-let burger = document.querySelector('.header-navigation__button--burger'); //кнопка отакрытия меню
-let closeBurger = document.querySelector('.button-close'); //кнопка закрытия меню
+let burger = document.querySelector('.header-navigation__button--burger'); // кнопка открытия меню
+let closeBurger = document.querySelector('.button-close'); // кнопка закрытия меню
 let menu = document.querySelector('.main-burgeg');
-
+let overlay = document.querySelector('.overlay');
 
 burger.addEventListener('click', function() {
-    console.log('бургер')
-    menu.classList.remove('no-active')
-})
+    console.log('бургер');
+    menu.classList.remove('no-active');
+    overlay.classList.add('active');
+
+});
 
 closeBurger.addEventListener('click', function() {
-    console.log('закрытие-бургер')
-    menu.classList.add('no-active')
-})
+    console.log('закрытие-бургер');
+    menu.classList.add('no-active');
+    overlay.classList.remove('active');
+});
+
+
