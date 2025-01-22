@@ -71,4 +71,11 @@ closeBurger.addEventListener('click', function() {
     overlay.classList.remove('active');
 });
 
+document.addEventListener('keydown', function(evt) {
+    if (evt.key === 'Escape') {
+        menu.classList.add('no-active');
+        overlay.classList.remove('active');
+    }
+})
+
 

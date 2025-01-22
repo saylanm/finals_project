@@ -89,7 +89,57 @@ html {
 .main {
     width: 100%;
     background-color: #F8F8F8;
+    // width: calc(100% - 250px);
+    // padding-left: 276px;
+}
+// делаем отступ от левого края для меню на 1440px
+@media screen and (min-width: 1120px) {
+    .main {
+        // width: 100%;
+        // background-color: #F8F8F8;
+        width: calc(100% - 250px);
+        margin-left: 276px;
+    }
 
+    .page {
+        width: calc(100% - 250px);
+        padding-left: 306px;
+    }
+
+    .footer_text {
+        width: calc(100% - 250px);
+        padding-left: 276px;
+    }
+
+    .footer {
+        width: calc(100% - 250px);
+        padding-left: 276px;
+    }
+
+    .action-buttons {
+        width: calc(100% - 250px);
+        padding-left: 276px;
+    }
+
+    .header {
+        width: calc(100% - 250px);
+        padding-left: 286px;
+    }
+    
+    .header2 {
+        width: calc(100% - 250px);
+        padding-left: 286px;
+    }
+
+    .swiper-wrapper {
+        width: calc(100% - 250px);
+        padding-left: 286px;
+    }
+
+    .buttons {
+        width: calc(100% - 250px);
+        padding-left: 276px;
+    }
 }
 
 .header-navigation__button {

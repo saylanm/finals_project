@@ -366,58 +366,6 @@
     .footer-element {
         text-align: center; /* На случай, если текст перенесется на несколько строк */
     }
-}
-
-@media (min-width: 768px)  { //убрали ограничитель на max-width 1440px
-
-    .footer_text--container {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        font-size: 16px;
-        line-height: 24px;  
-    }
-
-    .footer { 
-        border-top: 2px solid #D9FFF5;
-        padding-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 35px;
-    }
-    
-    .footer--container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footer-element {
-        text-align: end; /* На случай, если текст перенесется на несколько строк */
-    }
-
-    .footer_text {
-        max-width: 50%;
-        height: auto;
-        display: flex;
-        justify-content: start;
-        flex-direction: column;
-        margin-left: 10px;
-        margin-bottom: 20px;
-        margin-left: 30px;
-        gap: 20px;
-    }
-
-    .footer_text--container--svg {
-        margin-left: 305px;
-        margin-top: -25px;
-        width: 24px;
-        height: 27px;
-        background-image: url('./icons/more.svg');
-        background-repeat: no-repeat;
-        border: none;
-    }
 
     //  стили для меню
     .main-menu {
@@ -437,7 +385,6 @@
         padding: 20px;
         color: white;
         z-index: 1000;
-        
     }
 
     .no-active {
@@ -450,9 +397,6 @@
         list-style: none;
         text-decoration: none;
         color: black;
-        
-        
-        
     }
     
     .main-burgeg-b li {
@@ -610,7 +554,61 @@
         margin-bottom: 20px;
 
     }
+}
 
+@media (min-width: 768px)  { //убрали ограничитель на max-width 1440px
+
+    .footer_text--container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;  
+    }
+
+    .footer { 
+        border-top: 2px solid #D9FFF5;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+    
+    .footer--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-element {
+        text-align: end; /* На случай, если текст перенесется на несколько строк */
+    }
+
+    .footer_text {
+        max-width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        gap: 20px;
+    }
+
+    .footer_text--container--svg {
+        margin-left: 305px;
+        margin-top: -25px;
+        width: 24px;
+        height: 27px;
+        background-image: url('./icons/more.svg');
+        background-repeat: no-repeat;
+        border: none;
+    }
+    //если что сюда вернем стили
+    
+    // полупрозрачна модель
     .overlay {
         position: fixed;
         top: 0;
