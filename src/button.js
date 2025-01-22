@@ -71,12 +71,7 @@ closeBurger.addEventListener('click', function() {
     overlay.classList.remove('active');
 });
 
-document.addEventListener('keydown', function(evt) {
-    if (evt.key === 'Escape') {
-        menu.classList.add('no-active');
-        overlay.classList.remove('active');
-    }
-})
+
 
 
 //реализация мадального окна №1
@@ -96,6 +91,7 @@ closeModal.addEventListener('click', function() {
     overlay.classList.remove('active');
 })
 
+
 //реализация мадального окна №2
 
 let repair = document.querySelector('.header-navigation__button--repair');
@@ -113,3 +109,25 @@ closeModalTwo.addEventListener('click', function() {
     openModalTwo.classList.add('modal-no-active-2');
     overlay.classList.remove('active');
 })
+
+document.addEventListener('keydown', function(evt) {
+    if (evt.key === 'Escape') {
+        // Закрываем меню, если оно открыто
+        if (!menu.classList.contains('no-active')) {
+            menu.classList.add('no-active');
+            overlay.classList.remove('active');
+        }
+
+        // Закрываем первое модальное окно, если оно открыто
+        if (!openModal.classList.contains('modal-no-active')) {
+            openModal.classList.add('modal-no-active');
+            overlay.classList.remove('active');
+        }
+
+        // Закрываем второе модальное окно, если оно открыто
+        if (!openModalTwo.classList.contains('modal-no-active-2')) {
+            openModalTwo.classList.add('modal-no-active-2');
+            overlay.classList.remove('active');
+        }
+    }
+});
