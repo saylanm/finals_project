@@ -79,3 +79,21 @@ document.addEventListener('keydown', function(evt) {
 })
 
 
+//реализация мадального окна №1
+let checkstatus = document.querySelector('.header-navigation__button--checkstatus');
+let openModal = document.querySelector('.modal-number-1')
+let closeModal = document.querySelector('.modal-button-close');
+
+checkstatus.addEventListener('click', function() {
+    console.log('чекстатус робит')
+    openModal.classList.remove('modal-no-active')
+    overlay.classList.add('active');
+})
+
+closeModal.addEventListener('click', function() {
+    console.log('выход робит')
+    openModal.classList.add('modal-no-active')
+    overlay.classList.remove('active');
+})
+
+
