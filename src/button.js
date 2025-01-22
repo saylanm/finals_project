@@ -96,4 +96,20 @@ closeModal.addEventListener('click', function() {
     overlay.classList.remove('active');
 })
 
+//реализация мадального окна №2
 
+let repair = document.querySelector('.header-navigation__button--repair');
+let openModalTwo = document.querySelector('.modal-number-2');
+let closeModalTwo = document.querySelector('.modal-2-button-close')
+
+repair.addEventListener('click', function() {
+    console.log('репэир робит')
+    openModalTwo.classList.remove('modal-no-active-2');
+    overlay.classList.add('active');
+})
+
+closeModalTwo.addEventListener('click', function() {
+    console.log('репэир робит')
+    openModalTwo.classList.add('modal-no-active-2');
+    overlay.classList.remove('active');
+})
