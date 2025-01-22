@@ -39,7 +39,6 @@ var action_buttons2 = document.querySelector('.action-buttons2');
 // Логика "Показать все" 2 свайпера
 opens_button.addEventListener('click', function (evt) {
     evt.preventDefault();
-    console.log('Показать все: work');
     action_buttons.classList.add('modal2'); // Скрываем "Показать все"
     vidimo.classList.add('modal3'); // Показываем содержимое
     action_buttons2.classList.remove('modal2'); // Показываем "Скрыть"
@@ -48,11 +47,23 @@ opens_button.addEventListener('click', function (evt) {
 
 // Логика "Скрыть" 2 свайпера
 hide_button.addEventListener('click', function () {
-    console.log('Скрыть: work');
     vidimo.classList.remove('modal3'); // Скрываем содержимое
     action_buttons2.classList.add('modal2'); // Скрываем "Скрыть"
     action_buttons.classList.remove('modal2'); // Показываем "Показать все"
 });
 
+// реализация кнопки бургера
+let burger = document.querySelector('.header-navigation__button--burger'); //кнопка отакрытия меню
+let closeBurger = document.querySelector('.button-close'); //кнопка закрытия меню
+let menu = document.querySelector('.main-burgeg');
 
-let burger = document.querySelector('.header-navigation__button--burger');
+
+burger.addEventListener('click', function() {
+    console.log('бургер')
+    menu.classList.remove('no-active')
+})
+
+closeBurger.addEventListener('click', function() {
+    console.log('закрытие-бургер')
+    menu.classList.add('no-active')
+})

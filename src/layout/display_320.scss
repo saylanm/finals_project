@@ -240,6 +240,201 @@
     .footer-element {
         text-align: center; /* На случай, если текст перенесется на несколько строк */
     }
+
+    .main-menu {
+        width: 300px;
+        height: 100%;
+    }
+
+    .main-burgeg {
+        height: 100%;
+        width: 80%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #ffffff;
+        transition: left 0.3s ease;
+        list-style: none;
+        padding: 20px;
+        color: white;
+        z-index: 1000;
+        
+    }
+
+    .no-active {
+        display: none; 
+    }
+
+    .main-burgeg-b {
+        display: block;
+        padding-bottom: 30px;
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        
+        
+        
+    }
     
+    .main-burgeg-b li {
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+
+    .button-close {
+        width: 40px;
+        height: 40px;
+        background-image: url("./image/burger-X.svg");
+        border: none;
+        background-color: #F8F8F8;
+        }
+
+    .button-poisk {
+        width: 40px;
+        height: 40px;
+        background-image: url("/src/image/search-X.svg");
+        border: none;
+        background-color: #F8F8F8;
+        }
+
+    .container-button--menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .button1:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-6px) scale(0.9);
+        margin-right: 15px;
+        left: 0;
+    }
+    
+    .button2:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+    
+    .button3:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+    
+    .button4:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+    
+    .button5:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+    
+    .button6:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+    
+    .button7:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+    
+    .button8:hover::before {
+        position: absolute;
+        color: #7E7E82;
+        content: url("./image/highlight.svg");
+        transform: translateY(-10px) scale(0.9);
+        left: 0;
+    }
+
+    .mail {
+        display: flex;
+
+        margin-bottom: 20px;
+    
+    }
+    
+    .phone {
+        display: flex;
+
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .language {
+        display: inline-flex;
+        font-size: 16px;
+        gap: 20px;
+    }
+    
+    .ru:hover {
+        color: #7E7E82;
+    }
+
+    .svaze {
+        
+    }
+
+    .call {
+        width: 40px;
+        height: 40px;
+        background-image: url("./image/call.svg");
+        border: none;
+        background-color: #F8F8F8;
+        }
+    
+    .chat {
+        width: 40px;
+        height: 40px;
+        background-image: url("./image/chat.svg");
+        border: none;
+        background-color: #F8F8F8;
+        }
+    
+    .profile {
+        width: 40px;
+        height: 40px;
+        background-image: url("./image/profile.svg");
+        border: none;
+        background-color: #F8F8F8;
+        }
+    
+    .svaze {
+        display: flex;
+        justify-content: start;
+        order: -1;
+        gap: 20px;
+        // margin-top: 200px;
+        margin-bottom: 20px;
+
+    }
 }
 
