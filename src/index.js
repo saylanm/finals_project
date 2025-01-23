@@ -1,6 +1,6 @@
-import './styles.scss'; // испортируем сюда стили
+import 'normalize.css';  // Подключаем normalize.css из node_modules
+import './styles.scss';   // Подключаем собственные стили
 
-import 'normalize.css'; // Импортируем normalize.css
 
 //логика первого свайпера тест
 import './swiper.js'; // Импортируем логику свайпера
