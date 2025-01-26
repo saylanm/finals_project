@@ -116,10 +116,19 @@
     }
 
     .container-read__iamge {
-        display: flex;
+        background-image: url('/src/image/expand.svg');
+        background-repeat: no-repeat;
         width: 24px;
         height: 24px;
 
+
+    }
+
+    .container-read__text-fonts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     .none {

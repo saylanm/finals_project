@@ -195,6 +195,34 @@
         margin-left: 5px;
     }
 
+    .container-read {
+        width: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10px;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+    }
+
+    .container-read__iamge {
+        background-image: url('/src/image/expand.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+
+
+    }
+
+    .container-read__text-fonts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
     .block-text_768 {
         min-width: 312px;
     }
