@@ -950,7 +950,37 @@
         gap: 10px;
         background-color: #ffffff;
     }
-    
+
+    .action-icon {
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/image/expand.svg');
+        background-repeat: no-repeat;
+    }
+
+    .show-all-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #ffffff;
+    }
+
+    //скрыть 2 кнопка
+    .hide-all-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #ffffff;
+    }
+
+    .close {
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/image/expand.svg');
+        background-repeat: no-repeat;
+    }
 }
 
 
