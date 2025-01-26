@@ -915,6 +915,41 @@
         border: none;
         border-radius: 50%;
     }
+
+    .buttons {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .img {
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/image/expand.svg');
+        background-repeat: no-repeat;
+
+    }
+    //скрыть 1 кнопка
+    .deg {
+        width: 24px;
+        height: 24px;
+        background-image: url('/src/image/expand.svg');
+        background-repeat: no-repeat;
+    }
+
+    .closesd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #ffffff;
+    }
     
 }
 
